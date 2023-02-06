@@ -9,6 +9,8 @@ USERNAME_PASSWORD_PAIRS = [
 ]
 
 app = dash.Dash()
+server = app.server()
+
 auth = dash_auth.BasicAuth(app,USERNAME_PASSWORD_PAIRS)
 
 app.layout = html.Div([
